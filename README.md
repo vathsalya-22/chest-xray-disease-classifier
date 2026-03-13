@@ -4,7 +4,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)
 ![Airflow](https://img.shields.io/badge/Airflow-2.7.3-green)
 ![DVC](https://img.shields.io/badge/DVC-3.43.1-purple)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![License](https://img.shields.io/badge/MIT-yellow)
 
 ## Overview
 An end-to-end medical image classification system that:
@@ -87,27 +87,28 @@ NIH ChestX-ray14 Dataset (112,120 images)
 
 ## Project Structure
 ```
-chest-xray-project/
+chest-xray-disease-classifier/
 ├── airflow_dags/
-│   └── chest_xray_dag.py        # Airflow DAG definition
+│   └── chest_xray_dag.py           # Airflow DAG definition
 ├── data/
-│   ├── raw/                     # Original dataset
-│   ├── processed/               # Preprocessed data
-│   ├── train/                   # Training split (70%)
-│   ├── val/                     # Validation split (15%)
-│   └── test/                    # Test split (15%)
+│   ├── raw/                        # Original dataset
+│   ├── processed/                  # Preprocessed data
+│   ├── train/                      # Training split (70%)
+│   ├── val/                        # Validation split (15%)
+│   └── test/                       # Test split (15%)
 ├── notebooks/
-│   └── chest_xray_training.ipynb  # Training notebook (Google Colab)
+│   └── chest_xray_training.ipynb   # Training notebook (Google Colab)
 ├── screenshots/
 │   ├── airflow_pipeline_execution.png
 │   ├── training_curves.png
 │   ├── gradcam_heatmap.png
 │   └── evaluation_report.png
 ├── src/
-│   ├── preprocess.py            # Data pipeline functions
-│   └── download_sample.py       # Dataset download script
+│   ├── preprocess.py               # Data pipeline functions
+│   └── download_sample.py          # Dataset download script
 ├── docs/
-│   └── documentation.md         # Full technical documentation
+│   └── documentation.md            # Full technical documentation
+├── chest-xray-disease-classifier ppt.pdf
 ├── .gitignore
 ├── requirements.txt
 └── README.md
@@ -119,8 +120,8 @@ chest-xray-project/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/chest-xray-project.git
-cd chest-xray-project
+git clone https://github.com/vathsalya-22/chest-xray-disease-classifier.git
+cd chest-xray-disease-classifier
 ```
 
 ### 2. Create virtual environment
@@ -206,5 +207,6 @@ The pipeline runs 5 tasks automatically:
 MIT License — free to use for educational purposes.
 
 ## Author
-BYLAPUDI VATHSALYA RAM
+**BYLAPUDI VATHSALYA RAM**
 Built as part of a data engineering + deep learning portfolio project.
+GitHub: [vathsalya-22](https://github.com/vathsalya-22)
